@@ -9,8 +9,12 @@
     ];
 
     $scope.addTask = function(inputTask) {
-      $scope.tasks.push(inputTask);
-      $scope.newTask = '';
+      if (inputTask !== '' && inputTask !== undefined) {
+        $scope.tasks.push(inputTask);
+        $scope.newTask = '';
+      } else {
+        console.log(inputTask);
+      }
     };
   });
 })();
