@@ -2,10 +2,10 @@
 
 (function() {
   angular.module("app").controller("tasksCtrl", function($scope) {
-    $scope.task1 = "Take out the garbage";
-    $scope.task2 = "Clean my boots";
-    $scope.task3 = "Shovel the snow";
-
-    // $scope.message = "Hello!";
+    $scope.tasks = [
+      "Take out the garbage",
+      "Clean my boots",
+      "Shovel the snow"
+    ];
   });
 })();
