@@ -12,8 +12,6 @@
       if (inputTask !== '' && inputTask !== undefined) {
         $scope.tasks.push(inputTask);
         $scope.newTask = '';
-      } else {
-        console.log(inputTask);
       }
     };
   });
