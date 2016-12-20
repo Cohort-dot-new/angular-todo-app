@@ -14,5 +14,12 @@
         $scope.newTask = '';
       }
     };
+
+    $scope.completeTask = function(inputTask) {
+      var index = $scope.tasks.indexOf(inputTask);
+      if (index > -1) {
+        $scope.tasks.splice(index, 1);
+      }
+    };
   });
 })();
