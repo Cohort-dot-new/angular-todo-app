@@ -10,6 +10,7 @@
 
     $scope.addTask = function(inputTask) {
       $scope.tasks.push(inputTask);
-    };   
+      $scope.newTask = '';
+    };
   });
 })();
