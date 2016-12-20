@@ -7,5 +7,9 @@
       "Clean my boots",
       "Shovel the snow"
     ];
+
+    $scope.addTask = function(inputTask) {
+      $scope.tasks.push(inputTask);
+    };   
   });
 })();
